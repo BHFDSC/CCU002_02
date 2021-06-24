@@ -1,4 +1,4 @@
-# SARS-CoV-2 infection and risk of venous thromboembolism and arterial thrombotic events
+# SARS-CoV-2 vaccination and risk of venous thromboembolism and arterial thrombotic events
 
 ## Project description
 
