@@ -25,7 +25,7 @@ Please feel free to relay your suggestions or corrections regarding these script
 CCU002_02-R-si_01_pipe.R 
 - control center
 - sets the analysis-specific working and saving directories
-- sources si_02_pipe.R and analysis-specific scripts
+- sources CCU002_02-R-si_02_pipe.R and analysis-specific scripts
 - gets analysis-specific combinations of outcomes, vaccine, age groups, interacting features of interest as required
 - identifies which combinations have not been completed (eases resubmission)
 - parallelises the outstanding combinations
@@ -47,10 +47,10 @@ CCU002_02-R-si_fit_get_data_surv.R
 CCU002_02-R-si_call_mdl scripts (***6*** in total)
 - model and analysis-specific scripts
 - creates and formats survival data with core cohort data and the outcome of interest
-- sources its corresponding si_fit_model script 
+- sources its corresponding CCU002_02-R-si_fit_model script 
 
 CCU002_02-R-si_fit_model scripts (***6*** in total)
-- sources si_fit_get_data_surv.R 
+- sources CCU002_02-R-si_fit_get_data_surv.R 
 - defines analysis-specific covariates
 - defines and fits the model of interest
 
