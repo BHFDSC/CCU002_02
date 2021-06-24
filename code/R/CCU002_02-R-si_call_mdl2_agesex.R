@@ -5,7 +5,7 @@
 ## Author: Samantha Ip
 ## Contact detail: hyi20@medschl.cam.ac.uk
 ## =============================================================================
-source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_fit_model_agesex.R")
+source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_fit_model_agesex.R")
 
 get_vacc_res <- function(event, vac_str, agegp, cohort_vac, agebreaks, agelabels, covars, cuts_weeks_since_expo, master_df_fpath, cohort_start_date, cohort_end_date, noncase_frac=0.1){
   outcomes <- fread(master_df_fpath, 
