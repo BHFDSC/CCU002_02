@@ -9,7 +9,7 @@
 ls_events <- readRDS("~/dvt_icvt_results/ls_events.rds")
 if (data_version == "210607"){
   master_df_fpath <- "/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/data/ccu002_vacc_cohort_backup/ccu002_vacc_cohort_210607.csv.gz" # cached version
-} else if (data_version == "death28days"){ #210610
+} else if (data_version == "death28days"){ 
   master_df_fpath <- "/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/data/ccu002_vacc_cohort.csv.gz"
   ls_events <-  ls_events[!ls_events %in% c("death")]
 } else if (data_version == "anydiag"){
