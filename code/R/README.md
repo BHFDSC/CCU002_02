@@ -57,7 +57,7 @@ CCU002_02-R-si_fit_model scripts (***6*** in total)
 CCU002_02-R-si_fmt scripts (***3*** in total)
 - combines and formats export tables to be read into an R Markdown script to be exported as an HTML
 
-Please feel free to relay your suggestions or corrections regarding these scripts to Samantha Ip (hyi20@medschl.cam.uk).
+Please feel free to relay your suggestions or corrections regarding these scripts to Samantha Ip (hyi20@medschl.cam.ac.uk).
 
 ## Acknowledgements
 
