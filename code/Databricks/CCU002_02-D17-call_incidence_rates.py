@@ -1,7 +1,7 @@
 # Databricks notebook source
 # MAGIC %md # CCU002_02-D17-call_incidence_rates
 # MAGIC  
-# MAGIC **Description** Loops through (outcome, vaccine, outcome nature/data source) combos, calling D17
+# MAGIC **Description** Loops through (outcome, vaccine, outcome nature/data source) combos, calling D16
 # MAGIC 
 # MAGIC **Author(s)** Samantha Ip
 
