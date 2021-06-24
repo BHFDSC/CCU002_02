@@ -6,7 +6,7 @@
 ## Author: Samantha Ip
 ## Contact detail: 
 ## ==============================================================================
-source("/mnt/efs/hyi20//CCU002_vac/scripts/si_fit_model_fullcovariates_bkwdselection.R")
+source("/mnt/efs/hyi20//CCU002_vac/scripts/CCU002_02-R-si_fit_model_fullcovariates_bkwdselection.R")
 
 ls_events <- c("AMI")
 
