@@ -6,7 +6,7 @@
 ## Author: Samantha Ip
 ## Contact detail: hyi20@medschl.cam.ac.uk
 ## =============================================================================
-source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_fit_get_data_surv.R")
+source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_fit_get_data_surv.R")
 library(multcomp)
 
 
