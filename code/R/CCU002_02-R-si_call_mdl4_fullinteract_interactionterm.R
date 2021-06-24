@@ -5,7 +5,7 @@
 ## Author: Samantha Ip
 ## Contact detail: 
 ## =============================================================================
-source("/mnt/efs/hyi20//CCU002_vac/scripts/si_fit_model_reducedcovariates_interactions.R")
+source("/mnt/efs/hyi20//CCU002_vac/scripts/CCU002_02-R-si_fit_model_reducedcovariates_interactions.R")
 
 
 get_vacc_res <- function(ls_interacting_feats, event, vac_str, cohort_vac, covars, cuts_weeks_since_expo, 
