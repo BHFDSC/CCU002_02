@@ -3,12 +3,9 @@
 ##
 ## Author: Samantha Ip
 ## Contact detail: hyi20@medschl.cam.ac.uk
-## =============================================================================#-------------------------------------------------------------------------------
+## =============================================================================
 
-#-------------------------------------------------------------------------------
-# WRANGLE SURVIVAL DATE FROM DATABRICKS
-#-------------------------------------------------------------------------------
-source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_fit_get_data_surv.R")
+source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_fit_get_data_surv.R")
 
 
 fit_model_justweeks_age <- function(covars, vac_str, agebreaks, agelabels, agegp, event, survival_data, cuts_weeks_since_expo, cohort_start_date="2020-12-08", cohort_end_date="2021-03-18", expo="VACCINE", noncase_frac=0.1){
