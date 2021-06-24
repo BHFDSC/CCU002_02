@@ -64,7 +64,7 @@ if (! mdl %in% c("mdl1_unadj", "mdl2_agesex")){
   
   covars <- fread(master_df_fpath, select = covar_names)
   gc()
-  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_prep_covariates.R")
+  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_prep_covariates.R")
 
 }
 
