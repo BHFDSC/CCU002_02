@@ -7,8 +7,8 @@
 ## Contact detail: hyi20@medschl.cam.ac.uk
 ## =============================================================================
 
-setwd("/mnt/efs/hyi20/dvt_icvt_results/2021-06-03/fully_adj_bkwdselect/")
-source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_fit_model_onlyfixedcovariates.R")
+# setwd("/mnt/efs/hyi20/dvt_icvt_results/2021-06-03/fully_adj_bkwdselect/")
+source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_fit_model_onlyfixedcovariates.R")
 
 ls_events <- c("portal_vein_thrombosis",  "ICVT_summ_event", "other_DVT")
 
