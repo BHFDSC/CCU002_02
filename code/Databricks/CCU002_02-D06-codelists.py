@@ -1,7 +1,7 @@
 # Databricks notebook source
 # MAGIC %md # CCU002_02-D06-drug_codelists
 # MAGIC 
-# MAGIC **Description** This notebook generates the drug codelists needed for the CCU002 vaccine project.
+# MAGIC **Description** This notebook generates the codelists needed for this project.
 # MAGIC 
 # MAGIC **Author(s)** Venexia Walker
 
