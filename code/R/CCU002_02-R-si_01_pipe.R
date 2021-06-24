@@ -37,7 +37,7 @@ if (mdl %in% c("mdl1_unadj", "mdl2_agesex", "mdl3a_bkwdselect", "mdl3b_fullyadj"
 
 # data_version <-"death28days" #"210607", "death28days", "anydiag"
 
-source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_02_pipe.R")
+source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_02_pipe.R")
 
 gc()
 # ==============================================================================
@@ -46,32 +46,32 @@ gc()
 if (mdl == "mdl1_unadj"){
   setwd(paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/unadj_nosexforcombined/"))
   res_dir <- paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/unadj_nosexforcombined/")
-  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_call_mdl1_unadj.R")
+  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_call_mdl1_unadj.R")
   ls_events <- c(ls_events, "DIC", "TTP")
 } else if (mdl == "mdl2_agesex"){
   setwd(paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/adj_age_sex_only/"))
   res_dir <- paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/adj_age_sex_only/")
-  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_call_mdl2_agesex.R")
+  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_call_mdl2_agesex.R")
 } else if (mdl == "mdl3a_bkwdselect"){
   setwd(paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/fully_adj_bkwdselect/"))
   res_dir <- paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/fully_adj_bkwdselect/")
-  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_call_mdl3a_bkwdselect.R")
+  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_call_mdl3a_bkwdselect.R")
 } else if (mdl == "mdl3b_fullyadj"){
   setwd(paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/fully_adj_bkwdselect/"))
   res_dir <- paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/fully_adj_bkwdselect/")
-  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_call_mdl3b_fullyadj.R")
+  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_call_mdl3b_fullyadj.R")
 } else if (mdl == "mdl4_fullinteract_suppl34"){
   setwd(paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/interactionterm/"))
   res_dir <- paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/interactionterm/")
-  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_call_mdl4_fullinteract_interactionterm.R")
+  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_call_mdl4_fullinteract_interactionterm.R")
 } else if ((mdl == "mdl5_anydiag_death28days") & (data_version == "death28days")){
   setwd(paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/fully_adj_death28days/"))
   res_dir <- paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/fully_adj_death28days/")
-  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_call_mdl3b_fullyadj.R")
+  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_call_mdl3b_fullyadj.R")
 } else if ((mdl == "mdl5_anydiag_death28days") & (data_version == "anydiag")){
   setwd(paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/fully_adj_anydiag/"))
   res_dir <- paste0("/mnt/efs/hyi20/dvt_icvt_results/", res_dir_date, "/fully_adj_anydiag/")
-  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/si_call_mdl3b_fullyadj.R")
+  source("/mnt/efs/hyi20/dars_nic_391419_j3w9t_collab/CCU002_vac/scripts/CCU002_02-R-si_call_mdl3b_fullyadj.R")
 }
 
 
