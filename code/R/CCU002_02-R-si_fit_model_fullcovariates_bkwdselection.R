@@ -39,7 +39,7 @@ fit_model_fullcovariates <- function(covars, vac_str, agebreaks, agelabels, ageg
   
   coxfit_bkwdselection <- function(data_surv, sex, interval_names, fixed_covars, covars_excl_region, vac_str, event, agegp){
     covars_excl_region <- names(data_surv %>% 
-                                  select(all_of(covars_excl_region)) %>%
+                                  dplyr::select(all_of(covars_excl_region)) %>%
                                   select_if(~n_distinct(.) != 1) )
     
     
