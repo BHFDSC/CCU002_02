@@ -52,7 +52,14 @@ def drop_table(table_name:str, database_name:str='dars_nic_391419_j3w9t_collab',
 # MAGIC CREATE OR REPLACE GLOBAL TEMPORARY VIEW venous AS
 # MAGIC SELECT *
 # MAGIC FROM dars_nic_391419_j3w9t_collab.ccu002_vacc_cohort
-# MAGIC WHERE Venous_event_date IS NOT NULL
+# MAGIC WHERE diag1_Venous_event_date IS NOT NULL
+# MAGIC AND diag1_Venous_event_date >= '2020-12-08'
+# MAGIC AND diag1_Venous_event_date < '2021-03-19'
+# MAGIC AND ((diag1_Venous_event_date < VACCINATION_DATE_FIRST) 
+# MAGIC   OR (VACCINE_PRODUCT_FIRST IS NULL)
+# MAGIC   OR (diag1_Venous_event_date >= VACCINATION_DATE_FIRST AND VACCINE_PRODUCT_FIRST = 'AstraZeneca' AND VACCINATION_DATE_FIRST IS NOT NULL)
+# MAGIC   OR (diag1_Venous_event_date >= VACCINATION_DATE_FIRST AND VACCINE_PRODUCT_FIRST = 'Pfizer' AND VACCINATION_DATE_FIRST IS NOT NULL))
+# MAGIC AND ((diag1_Venous_event_date <= death_date) OR (death_date IS NULL))
 
 # COMMAND ----------
 
@@ -60,7 +67,14 @@ def drop_table(table_name:str, database_name:str='dars_nic_391419_j3w9t_collab',
 # MAGIC CREATE OR REPLACE GLOBAL TEMPORARY VIEW arterial AS
 # MAGIC SELECT *
 # MAGIC FROM dars_nic_391419_j3w9t_collab.ccu002_vacc_cohort
-# MAGIC WHERE Arterial_event_date IS NOT NULL
+# MAGIC WHERE diag1_Arterial_event_date IS NOT NULL
+# MAGIC AND diag1_Arterial_event_date >= '2020-12-08'
+# MAGIC AND diag1_Arterial_event_date < '2021-03-19'
+# MAGIC AND ((diag1_Arterial_event_date < VACCINATION_DATE_FIRST) 
+# MAGIC   OR (VACCINE_PRODUCT_FIRST IS NULL)
+# MAGIC   OR (diag1_Arterial_event_date >= VACCINATION_DATE_FIRST AND VACCINE_PRODUCT_FIRST = 'AstraZeneca' AND VACCINATION_DATE_FIRST IS NOT NULL)
+# MAGIC   OR (diag1_Arterial_event_date >= VACCINATION_DATE_FIRST AND VACCINE_PRODUCT_FIRST = 'Pfizer' AND VACCINATION_DATE_FIRST IS NOT NULL))
+# MAGIC AND ((diag1_Arterial_event_date <= death_date) OR (death_date IS NULL))
 
 # COMMAND ----------
 
@@ -68,7 +82,14 @@ def drop_table(table_name:str, database_name:str='dars_nic_391419_j3w9t_collab',
 # MAGIC CREATE OR REPLACE GLOBAL TEMPORARY VIEW thrombocytopenia AS
 # MAGIC SELECT *
 # MAGIC FROM dars_nic_391419_j3w9t_collab.ccu002_vacc_cohort
-# MAGIC WHERE thrombocytopenia_date IS NOT NULL
+# MAGIC WHERE diag1_thrombocytopenia_date IS NOT NULL
+# MAGIC AND diag1_thrombocytopenia_date >= '2020-12-08'
+# MAGIC AND diag1_thrombocytopenia_date < '2021-03-19'
+# MAGIC AND ((diag1_thrombocytopenia_date < VACCINATION_DATE_FIRST) 
+# MAGIC   OR (VACCINE_PRODUCT_FIRST IS NULL)
+# MAGIC   OR (diag1_thrombocytopenia_date >= VACCINATION_DATE_FIRST AND VACCINE_PRODUCT_FIRST = 'AstraZeneca' AND VACCINATION_DATE_FIRST IS NOT NULL)
+# MAGIC   OR (diag1_thrombocytopenia_date >= VACCINATION_DATE_FIRST AND VACCINE_PRODUCT_FIRST = 'Pfizer' AND VACCINATION_DATE_FIRST IS NOT NULL))
+# MAGIC AND ((diag1_thrombocytopenia_date <= death_date) OR (death_date IS NULL))
 
 # COMMAND ----------
 
@@ -90,16 +111,16 @@ for data in ["whole","venous","arterial","thrombocytopenia"]:
 # MAGIC %sql
 # MAGIC CREATE OR REPLACE GLOBAL TEMP VIEW ccu002_vacc_t1 AS
 # MAGIC SELECT *
-# MAGIC FROM global_temp.table1_whole
+# MAGIC FROM global_temp.t1_whole
 # MAGIC UNION ALL
 # MAGIC SELECT *
-# MAGIC FROM global_temp.table1_venous
+# MAGIC FROM global_temp.t1_venous
 # MAGIC UNION ALL
 # MAGIC SELECT *
-# MAGIC FROM global_temp.table1_arterial
+# MAGIC FROM global_temp.t1_arterial
 # MAGIC UNION ALL
 # MAGIC SELECT *
-# MAGIC FROM global_temp.table1_thrombocytopenia
+# MAGIC FROM global_temp.t1_thrombocytopenia
 
 # COMMAND ----------
 
@@ -117,4 +138,5 @@ create_table('ccu002_vacc_t1')
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT * FROM dars_nic_391419_j3w9t_collab.ccu002_vacc_t1
+# MAGIC SELECT * 
+# MAGIC FROM dars_nic_391419_j3w9t_collab.ccu002_vacc_t1
