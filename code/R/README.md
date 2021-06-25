@@ -44,12 +44,12 @@ CCU002_02-R-si_prep_covariates.R
 CCU002_02-R-si_fit_get_data_surv.R 
 - formats dataset for time-dependent coxph
 
-CCU002_02-R-si_call_mdl scripts (***6*** in total)
+CCU002_02-R-si_call_mdl scripts (***5*** in total)
 - model and analysis-specific scripts
 - creates and formats survival data with core cohort data and the outcome of interest
 - sources its corresponding CCU002_02-R-si_fit_model script 
 
-CCU002_02-R-si_fit_model scripts (***6*** in total)
+CCU002_02-R-si_fit_model scripts (***5*** in total)
 - sources CCU002_02-R-si_fit_get_data_surv.R 
 - defines analysis-specific covariates
 - defines and fits the model of interest
