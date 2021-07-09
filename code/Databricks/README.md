@@ -26,3 +26,4 @@ This directory contains the following Databricks notebooks:
 | CCU002_02-D19-table_1 | Venexia Walker | This notebook extracts the information needed for table 1. |
 | CCU002_02-D20-table_S2 | Venexia Walker | This notebook calculates event numbers for supplementary table 2.|
 | CCU002_02-D21-ICVT_comparison | Venexia Walker | This notebook compares the characteristics of patients who had ICVT before and after vaccination. |
+| CCU002_02-D22-age_summary | Venexia Walker | This notebook breaks down summary outcomes to show the contribution of individual events. |
