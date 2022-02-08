@@ -10,6 +10,18 @@ We will compare the risk of developing one of these conditions among people who 
 
 This  research  is  needed  to  provide  reliable  information  to  medicines regulators,  the  Department  of Health and Social Care, health professionals and the public about any risks associated with Covid-19 vaccines. Because the clotting events that might be affected are very rare, any increase in risk is likely to  be  very  small.  It  will,  therefore,  be  important  to  understand not  only  whether  or  not  there  is  an increased risk but also the size of any increased risk and whether it only applies to particular groups of people. It will also be important to understand how any risk compares with the protective benefits of the vaccine, which are known to be substantial. 
 
+## How to cite this work
+> Citation details to follow
+
+## Contents
+
+* [View the analysis code used in NHS Digital's TRE for England](https://github.com/BHFDSC/CCU002_02/tree/main/code)
+* [View the phenotyping algorithms and codelists used in NHS Digital's TRE for England](https://github.com/BHFDSC/CCU002_02/tree/main/phenotypes)
+
 ## Project approval
 
-This project has been approved by the CVD-COVID-UK Approvals & Oversight Board (Project ID: CCU002_02).
+This is a sub-project of [project CCU002](https://github.com/BHFDSC/CCU002) approved by the CVD-COVID-UK / COVID-IMPACT Approvals & Oversight Board (sub-project: CCU002_02).
+
+## License
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this software except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
