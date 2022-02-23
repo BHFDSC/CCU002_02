@@ -11,7 +11,7 @@ We will compare the risk of developing one of these conditions among people who 
 This  research  is  needed  to  provide  reliable  information  to  medicines regulators,  the  Department  of Health and Social Care, health professionals and the public about any risks associated with Covid-19 vaccines. Because the clotting events that might be affected are very rare, any increase in risk is likely to  be  very  small.  It  will,  therefore,  be  important  to  understand not  only  whether  or  not  there  is  an increased risk but also the size of any increased risk and whether it only applies to particular groups of people. It will also be important to understand how any risk compares with the protective benefits of the vaccine, which are known to be substantial. 
 
 ## How to cite this work
-> Citation details to follow
+Whiteley WN, Ip S, Cooper JA, Bolton T, Keene S, Walker V, et al. (2022) Association of COVID-19 vaccines ChAdOx1 and BNT162b2 with major venous, arterial, or thrombocytopenic events: A population-based cohort study of 46 million adults in England. PLoS Med 19(2): e1003926. https://doi.org/10.1371/journal.pmed.1003926
 
 ## Contents
 
